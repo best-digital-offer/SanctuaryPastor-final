@@ -1,0 +1,7 @@
+{
+  "name": "Sanctuary Pastor",
+  "description": "Your AI Christian Prayer Companion. Share what's on your heart and experience personal, faith-filled prayer with realistic virtual pastor audio and scripture.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
