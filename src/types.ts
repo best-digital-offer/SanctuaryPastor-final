@@ -22,7 +22,7 @@ export interface PrayerBook {
   amazonUrl: string;
   imageUrl: string;
   coverGradient: string;
-  accentColor: string;
+  accentColor?: string;
   description: string;
   keyVerse?: string;
   badge?: string;
