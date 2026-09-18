@@ -9,7 +9,25 @@ export type Page =
   | 'pray-for-someone'
   | 'journal'
   | 'scripture'
+  | 'prayer-books'
   | 'admin';
+
+export interface PrayerBook {
+  id: number;
+  title: string;
+  author: string;
+  category: string;
+  rating: number;
+  reviewsCount: string;
+  amazonUrl: string;
+  imageUrl: string;
+  coverGradient: string;
+  accentColor: string;
+  description: string;
+  keyVerse?: string;
+  badge?: string;
+  price?: string;
+}
 
 export interface User {
   id: string;

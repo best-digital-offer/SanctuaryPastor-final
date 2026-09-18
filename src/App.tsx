@@ -15,6 +15,7 @@ import { PrayForSomeoneView } from './components/PrayForSomeoneView';
 import { PrayerJournalView } from './components/PrayerJournalView';
 import { ScriptureView } from './components/ScriptureView';
 import { PrayerTopicsView } from './components/PrayerTopicsView';
+import { PrayerBooksView } from './components/PrayerBooksView';
 import { AdminView } from './components/AdminView';
 import { LegalModal, LegalTopic } from './components/LegalModal';
 
@@ -338,6 +339,7 @@ export default function App() {
     'scripture',
     'pray-for-someone',
     'journal',
+    'prayer-books',
   ].includes(currentPage);
 
   return (
@@ -439,6 +441,13 @@ export default function App() {
           <PrayerTopicsView
             onSelectTopic={(topic, prompt) => handleStartPrayer(prompt)}
             setCurrentPage={setCurrentPage}
+          />
+        )}
+
+        {currentPage === 'prayer-books' && (
+          <PrayerBooksView
+            setCurrentPage={setCurrentPage}
+            onStartPrayer={handleStartPrayer}
           />
         )}
 

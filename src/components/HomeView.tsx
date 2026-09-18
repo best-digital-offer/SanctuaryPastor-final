@@ -12,8 +12,11 @@ import {
   X,
   Heart,
   BookOpen,
+  Star,
+  ExternalLink,
 } from 'lucide-react';
 import { ChristianCross } from './SanctuaryLogo';
+import { PRAYER_BOOKS } from '../data/prayerBooksData';
 
 interface HomeViewProps {
   onStartPrayer: (initialText?: string) => void;
@@ -49,16 +52,35 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              {/* Brand badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#111C38] border border-amber-400/30 text-amber-300 shadow-sm">
-                <ChristianCross className="w-4 h-4 text-amber-400" />
-                <span className="font-brand text-xs uppercase tracking-widest font-semibold">
-                  Sanctuary Pastor
-                </span>
-                <span className="text-slate-500 text-xs">•</span>
-                <span className="text-xs text-slate-300 font-normal">
-                  Your AI Christian Prayer Companion
-                </span>
+              {/* Top Badges and Action Button */}
+              <div className="flex flex-wrap items-center gap-3">
+                {/* Brand badge */}
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#111C38] border border-amber-400/30 text-amber-300 shadow-sm">
+                  <ChristianCross className="w-4 h-4 text-amber-400" />
+                  <span className="font-brand text-xs uppercase tracking-widest font-semibold">
+                    Sanctuary Pastor
+                  </span>
+                  <span className="text-slate-500 text-xs">•</span>
+                  <span className="text-xs text-slate-300 font-normal">
+                    Your AI Christian Prayer Companion
+                  </span>
+                </div>
+
+                {/* Top Button: Best Prayer Books On Amazon */}
+                <button
+                  id="hero-top-prayer-books-btn"
+                  onClick={() => {
+                    setCurrentPage('prayer-books');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-yellow-500/15 to-amber-500/20 hover:from-amber-500/30 hover:to-yellow-500/25 border border-amber-400/40 hover:border-amber-300 text-amber-300 text-xs font-bold transition-all shadow-sm cursor-pointer group"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
+                  <span>Best Prayer Books On Amazon</span>
+                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-400 text-slate-950 font-bold">
+                    30 Books
+                  </span>
+                </button>
               </div>
 
               {/* Main Spiritual Headline */}
@@ -285,6 +307,105 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Receive comforting Scripture promises, save your prayer, and continue with renewal.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURED BEST PRAYER BOOKS ON AMAZON SHOWCASE */}
+      <section className="relative overflow-hidden py-14 sm:py-18 bg-[#091126] border-t border-[#162347]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-300 text-xs font-semibold">
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Amazon Curated Library</span>
+              </div>
+              <h2 className="font-serif-sacred text-2xl sm:text-3xl font-bold text-white">
+                Best Prayer Books On Amazon
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
+                Deepen your spiritual intimacy with Christ. Browse our top 30 recommended prayer guides and devotionals available directly on Amazon.
+              </p>
+            </div>
+
+            <button
+              onClick={() => {
+                setCurrentPage('prayer-books');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-bold transition-all shadow-md cursor-pointer shrink-0"
+            >
+              <span>Explore All 30 Books</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+
+          {/* 4 Spotlighted Books */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {PRAYER_BOOKS.slice(0, 4).map((book) => (
+              <div
+                key={book.id}
+                className="bg-[#0C1733] border border-[#1C2C50] hover:border-amber-400/50 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:shadow-amber-950/20 group"
+              >
+                <div>
+                  {/* Book Card Cover Graphic */}
+                  <div
+                    className={`w-full aspect-[3/4] rounded-xl overflow-hidden bg-gradient-to-br ${book.coverGradient} p-4 flex flex-col justify-between mb-3.5 shadow-md relative border border-white/10`}
+                  >
+                    <div className="flex items-center justify-between relative z-10">
+                      <ChristianCross className="w-4 h-4 text-amber-300" />
+                      <span className="text-[9px] font-bold uppercase tracking-wider text-amber-300 bg-black/40 px-2 py-0.5 rounded">
+                        {book.badge || 'Amazon Pick'}
+                      </span>
+                    </div>
+
+                    <div className="space-y-1 my-auto relative z-10">
+                      <p className="font-serif-sacred font-bold text-sm text-white leading-snug line-clamp-2">
+                        {book.title}
+                      </p>
+                      <p className="text-[11px] text-amber-100 font-medium">
+                        {book.author}
+                      </p>
+                    </div>
+
+                    <div className="flex items-center justify-between text-[10px] text-white/80 border-t border-white/10 pt-1.5 relative z-10">
+                      <span className="truncate">{book.category}</span>
+                      <span className="font-bold text-amber-300">{book.price}</span>
+                    </div>
+                  </div>
+
+                  {/* Title & Author */}
+                  <h3 className="font-semibold text-sm text-white line-clamp-2 leading-snug group-hover:text-amber-300 transition-colors">
+                    {book.title}
+                  </h3>
+                  <p className="text-xs text-slate-400 mt-0.5">By {book.author}</p>
+
+                  {/* Rating */}
+                  <div className="flex items-center gap-1.5 mt-2">
+                    <div className="flex text-amber-400">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-3 h-3 fill-current text-amber-400" />
+                      ))}
+                    </div>
+                    <span className="text-xs font-bold text-white">{book.rating}</span>
+                    <span className="text-[10px] text-slate-400">({book.reviewsCount})</span>
+                  </div>
+                </div>
+
+                {/* View on Amazon Button */}
+                <div className="pt-4">
+                  <a
+                    href={book.amazonUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2 px-3 rounded-lg text-xs font-bold bg-[#FF9900] hover:bg-[#FFB033] text-slate-950 transition-all flex items-center justify-center gap-1.5 shadow-sm cursor-pointer"
+                  >
+                    <span>View on Amazon</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-950 stroke-[2.5]" />
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

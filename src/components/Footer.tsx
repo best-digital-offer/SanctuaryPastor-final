@@ -70,6 +70,20 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, setCurrentPage }) =
             </li>
             <li>
               <button
+                onClick={() => {
+                  setCurrentPage('prayer-books');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="hover:text-amber-300 transition-colors text-left cursor-pointer flex items-center gap-1.5 font-semibold text-amber-300/90"
+              >
+                <span>Best Books On Amazon (30)</span>
+                <span className="text-[9px] px-1.5 py-0.2 rounded bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                  Featured
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
                 onClick={() => setCurrentPage('pray-for-someone')}
                 className="hover:text-amber-300 transition-colors text-left cursor-pointer"
               >

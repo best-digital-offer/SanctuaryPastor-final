@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Page, User } from '../types';
-import { Menu, X, Sparkles, User as UserIcon, ShieldCheck, LogOut } from 'lucide-react';
+import { Menu, X, Sparkles, User as UserIcon, ShieldCheck, LogOut, BookOpen } from 'lucide-react';
 import { ChristianCross } from './SanctuaryLogo';
 
 interface NavbarProps {
@@ -45,6 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       },
     },
     { label: 'Prayer Topics', page: 'prayer-topics' },
+    { label: 'Books on Amazon', page: 'prayer-books' },
     { label: 'Pricing', page: 'pricing' },
     { label: 'Scripture', page: 'scripture' },
     { label: 'Journal', page: 'journal' },
@@ -109,6 +110,27 @@ export const Navbar: React.FC<NavbarProps> = ({
             );
           })}
         </nav>
+
+        {/* Prominent Top Button: Best Prayer Books On Amazon */}
+        <button
+          id="nav-top-prayer-books-btn"
+          onClick={() => {
+            setCurrentPage('prayer-books');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className={`hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer border shadow-sm ${
+            currentPage === 'prayer-books'
+              ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-amber-950/50'
+              : 'bg-gradient-to-r from-amber-500/15 via-yellow-500/10 to-amber-500/15 text-amber-300 border-amber-400/40 hover:border-amber-300 hover:text-white hover:bg-amber-500/20'
+          }`}
+          title="Browse Curated Christian Prayer Books on Amazon"
+        >
+          <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+          <span>Best Prayer Books On Amazon</span>
+          <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-200 border border-amber-400/30 font-semibold">
+            Amazon
+          </span>
+        </button>
 
         {/* Right Action buttons */}
         <div className="hidden md:flex items-center gap-3">
@@ -220,6 +242,24 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Mobile dropdown drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#0A1128] border-b border-slate-800 px-4 pt-3 pb-5 space-y-2">
+          {/* Featured Top Button on Mobile */}
+          <button
+            onClick={() => {
+              setCurrentPage('prayer-books');
+              setMobileMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-bold text-amber-300 bg-gradient-to-r from-amber-500/20 to-yellow-500/10 border border-amber-400/40 flex items-center justify-between cursor-pointer shadow-sm"
+          >
+            <div className="flex items-center gap-2">
+              <BookOpen className="w-4 h-4 text-amber-400" />
+              <span>Best Prayer Books On Amazon</span>
+            </div>
+            <span className="text-[10px] px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-bold">
+              30 Books
+            </span>
+          </button>
+
           {navLinks.map((link) => (
             <button
               key={link.label}

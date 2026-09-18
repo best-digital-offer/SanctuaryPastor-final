@@ -40,16 +40,19 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
       isActive: currentPage === 'prayer-session' || currentPage === 'prayer-topics' || currentPage === 'pray-for-someone',
     },
     {
-      id: 'journal',
-      label: 'Journal',
-      icon: Bookmark,
-      action: () => setCurrentPage('journal'),
-      isActive: currentPage === 'journal',
+      id: 'books',
+      label: 'Books',
+      icon: BookOpen,
+      action: () => {
+        setCurrentPage('prayer-books');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      },
+      isActive: currentPage === 'prayer-books',
     },
     {
       id: 'bible',
       label: 'Bible',
-      icon: BookOpen,
+      icon: Bookmark,
       action: () => setCurrentPage('scripture'),
       isActive: currentPage === 'scripture',
     },
