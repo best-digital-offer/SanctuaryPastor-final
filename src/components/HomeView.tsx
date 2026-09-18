@@ -78,7 +78,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <BookOpen className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
                   <span>Best Prayer Books On Amazon</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-400 text-slate-950 font-bold">
-                    30 Books
+                    
                   </span>
                 </button>
               </div>
@@ -335,7 +335,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               }}
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-bold transition-all shadow-md cursor-pointer shrink-0"
             >
-              <span>Explore All 30 Books</span>
+              <span>Explore All Books</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
