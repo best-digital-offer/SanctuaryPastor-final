@@ -111,27 +111,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           })}
         </nav>
 
-        {/* Prominent Top Button: Best Prayer Books On Amazon */}
-        <button
-          id="nav-top-prayer-books-btn"
-          onClick={() => {
-            setCurrentPage('prayer-books');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          className={`hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer border shadow-sm ${
-            currentPage === 'prayer-books'
-              ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-amber-950/50'
-              : 'bg-gradient-to-r from-amber-500/15 via-yellow-500/10 to-amber-500/15 text-amber-300 border-amber-400/40 hover:border-amber-300 hover:text-white hover:bg-amber-500/20'
-          }`}
-          title="Browse Curated Christian Prayer Books on Amazon"
-        >
-          <BookOpen className="w-3.5 h-3.5 text-amber-400" />
-          <span>Best Prayer Books On Amazon</span>
-          <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-200 border border-amber-400/30 font-semibold">
-            Amazon
-          </span>
-        </button>
-
         {/* Right Action buttons */}
         <div className="hidden md:flex items-center gap-3">
           {user.id ? (
@@ -180,20 +159,26 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>Dashboard</span>
               </button>
 
-              {/* Log Out Quick Action */}
-              {onLogout && (
-                <button
-                  id="nav-logout-btn"
-                  onClick={onLogout}
-                  className="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-[#101B36] text-slate-400 border border-slate-700 hover:border-rose-500/40 hover:text-rose-300 hover:bg-rose-500/10 transition-colors flex items-center gap-1.5 cursor-pointer"
-                  title="Log out of Sanctuary"
-                >
-                  <LogOut className="w-3.5 h-3.5 text-rose-400" />
-                  <span className="hidden sm:inline">Log Out</span>
-                </button>
-              )}
+              {/* Compact Prayer Books navigation button */}
+              <button
+                id="nav-prayer-books-btn"
+                onClick={() => {
+                  setCurrentPage('prayer-books');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 border transition-all cursor-pointer whitespace-nowrap ${
+                  currentPage === 'prayer-books'
+                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/50'
+                    : 'bg-[#101B36] text-slate-200 border-slate-700 hover:border-amber-400/40 hover:text-white'
+                }`}
+                title="Best Prayer Books on Amazon"
+              >
+                <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+                <span>Best Prayer Books on Amazon</span>
+              </button>
 
-              {/* Admin Button ONLY if user.role === 'admin' */}
+              {/* Prayer Books + Admin */}
+              
               {user.role === 'admin' && (
                 <button
                   id="nav-admin-restricted-btn"
@@ -249,15 +234,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               setMobileMenuOpen(false);
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="w-full text-left px-3.5 py-2.5 rounded-xl text-xs font-bold text-amber-300 bg-gradient-to-r from-amber-500/20 to-yellow-500/10 border border-amber-400/40 flex items-center justify-between cursor-pointer shadow-sm"
+            className="w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-semibold text-slate-200 bg-[#101B36] border border-slate-700 flex items-center gap-2 cursor-pointer hover:border-amber-400/40 hover:text-white transition-all"
           >
-            <div className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-amber-400" />
-              <span>Best Prayer Books On Amazon</span>
-            </div>
-            <span className="text-[10px] px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-bold">
-              30 Books
-            </span>
+            <BookOpen className="w-4 h-4 text-amber-400" />
+            <span>Best Prayer Books on Amazon</span>
           </button>
 
           {navLinks.map((link) => (
