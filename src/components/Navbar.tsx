@@ -73,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             setCurrentPage('home');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="flex items-center gap-3 text-left group focus:outline-none cursor-pointer"
+          className="flex items-center gap-3 text-left group focus:outline-none cursor-pointer shrink-0 lg:mr-5"
         >
           <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#D49A2D] to-[#B37E1E] flex items-center justify-center text-slate-950 shadow-md shadow-amber-900/20 group-hover:scale-105 transition-transform">
             <ChristianCross className="w-5 h-5 text-[#0A1128]" />
@@ -91,7 +91,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </button>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-6 flex-1 justify-center">
           {navLinks.map((link) => {
             const isActive = currentPage === link.page;
             return (
@@ -112,28 +112,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Right Action buttons */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-2 shrink-0">
           {user.id ? (
             <div className="flex items-center gap-3">
-              {/* Free prayer / Membership status pill */}
-              <div
-                className={`px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5 border ${
-                  user.isPaid
-                    ? 'bg-amber-500/10 border-amber-500/40 text-amber-300'
-                    : user.freePrayersLeft > 0
-                    ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-300'
-                    : 'bg-slate-800 border-slate-700 text-slate-400'
-                }`}
-              >
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>
-                  {user.isPaid
-                    ? 'Subscriber Access'
-                    : user.freePrayersLeft > 0
-                    ? '1 Free Prayer'
-                    : 'Free Prayer Used'}
-                </span>
-              </div>
 
               {/* User Dashboard */}
               <button
@@ -166,7 +147,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setCurrentPage('prayer-books');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 border transition-all cursor-pointer whitespace-nowrap ${
+                className={`px-2.5 xl:px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 border transition-all cursor-pointer whitespace-nowrap ${
                   currentPage === 'prayer-books'
                     ? 'bg-amber-500/20 text-amber-300 border-amber-500/50'
                     : 'bg-[#101B36] text-slate-200 border-slate-700 hover:border-amber-400/40 hover:text-white'
