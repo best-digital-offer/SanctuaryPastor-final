@@ -4,6 +4,7 @@ import { PrayerBook } from '../types';
 export const PRAYER_BOOKS: PrayerBook[] = [
   {
     id: 1,
+    reviewsCount: "950",
     title: "365-Day Bible Verse Prayer Devotional: A Scripture and Prayer for Every Day of the Year — to Grow Your Faith, Deepen Your Prayer Life, and Draw You Closer to God",
     category: "Devotionals",
     amazonUrl: "https://a.co/d/0dybaHZ4",
@@ -13,6 +14,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 2,
+    reviewsCount: "657",
     title: "Prayers for the Anxious Heart: 100 Prayers for Peace When Worry Won't Stop",
     category: "Peace & Anxiety",
     amazonUrl: "https://a.co/d/02jLyNKW",
@@ -22,6 +24,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 3,
+    reviewsCount: "944",
     title: "Prayers for Financial Breakthrough: 90 Prayers for Provision, Debt Relief, and Financial Freedom",
     category: "Finances & Provision",
     amazonUrl: "https://a.co/d/03uWfVq4",
@@ -31,6 +34,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 4,
+    reviewsCount: "578",
     title: "Prayers for Hard Seasons: 90 Prayers for the Seasons That Break You Open",
     category: "Strength & Encouragement",
     amazonUrl: "https://a.co/d/0ipF5t9k",
@@ -40,6 +44,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 5,
+    reviewsCount: "816",
     title: "Warfare Prayers for Your Marriage: Powerful Battle Prayers to Protect, Strengthen, and Restore Your Husband, Your Home, and Your Covenant",
     category: "Marriage & Family",
     amazonUrl: "https://a.co/d/0eVPQi6M",
@@ -49,6 +54,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 6,
+    reviewsCount: "525",
     title: "Trusting God in the Waiting: 90 Days of Hope for the Waiting Heart",
     category: "Hope & Waiting",
     amazonUrl: "https://a.co/d/072B97Wn",
@@ -58,6 +64,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 7,
+    reviewsCount: "810",
     title: "A Woman's Prayer & Devotional Journal: 90 Days of Scripture, Reflection, and Grace",
     category: "Women",
     amazonUrl: "https://a.co/d/0fKJEeBG",
@@ -67,6 +74,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 8,
+    reviewsCount: "968",
     title: "30-Day Morning Prayer: Daily Scripture, Prayer, and Encouragement to Start Your Day With God",
     category: "Prayer & Devotionals",
     amazonUrl: "https://a.co/d/02ioAj83",
@@ -76,6 +84,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 9,
+    reviewsCount: "720",
     title: "Peace for the Restless: 90 Days of Calm for a Restless Heart",
     category: "Peace & Anxiety",
     amazonUrl: "https://a.co/d/0cl336Sp",
@@ -85,6 +94,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 10,
+    reviewsCount: "680",
     title: "Trusting Tomorrow: 90 Days of Scripture, Prayer, and Hope for When You Can't See the Way",
     category: "Hope & Waiting",
     amazonUrl: "https://a.co/d/01HjGahS",
@@ -94,6 +104,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 11,
+    reviewsCount: "920",
     title: "Worry Less, Trust More: 90 Days of Scripture, Prayer, and Peace for the Heart That Carries Too Much",
     category: "Peace & Anxiety",
     amazonUrl: "https://a.co/d/0btGMd5p",
@@ -103,6 +114,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 12,
+    reviewsCount: "911",
     title: "For the Anxious Man: 90 Days of Scripture, Prayer, and Strength for the Silent Struggle",
     category: "Men",
     amazonUrl: "https://a.co/d/0dQvPmn8",
@@ -112,6 +124,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 13,
+    reviewsCount: "821",
     title: "God Is Near to the Brokenhearted: 90 Days of Scripture, Prayer, and Encouragement for the Brokenhearted",
     category: "Grief & Loss",
     amazonUrl: "https://a.co/d/0egGVKku",
@@ -121,6 +134,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 14,
+    reviewsCount: "666",
     title: "When You Don’t Know What to Pray: 90 Days of Scripture, Prayer, and Encouragement for When Words Won’t Come",
     category: "Prayer & Devotionals",
     amazonUrl: "https://a.co/d/08m3Hu57",
@@ -130,6 +144,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 15,
+    reviewsCount: "837",
     title: "Her Quiet Place: 90 Days of Scripture, Prayer, and Encouragement for the Woman Who Needs Rest and Stillness",
     category: "Women",
     amazonUrl: "https://a.co/d/0fRsgv0R",
@@ -139,6 +154,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 16,
+    reviewsCount: "580",
     title: "When Your Heart Won’t Be Still: 90 Days of Scripture, Prayer, and Christian Encouragement for Worry, Fear, and Finding God’s Peace",
     category: "Peace & Anxiety",
     amazonUrl: "https://a.co/d/0eAMV3lE",
@@ -148,6 +164,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 17,
+    reviewsCount: "683",
     title: "Women of the Bible: 90 Days of Scripture, Prayer, and Encouragement from the Women Who Walked with God",
     category: "Women",
     amazonUrl: "https://a.co/d/09q7A2Sv",
@@ -157,6 +174,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 18,
+    reviewsCount: "923",
     title: "Prayers for Healing and Strength: Powerful Prayer Points and Scripture Declarations for Physical, Emotional, and Spiritual Healing, Divine Strength, and...",
     category: "Healing & Health",
     amazonUrl: "https://a.co/d/07UcpE2P",
@@ -166,6 +184,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 19,
+    reviewsCount: "878",
     title: "Warfare Prayers for Finances & Job: Powerful Battle Prayers for Financial Breakthrough, Debt Cancellation, Career Protection, and Divine Provision",
     category: "Finances & Provision",
     amazonUrl: "https://a.co/d/0dhQ2WHy",
@@ -175,6 +194,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 20,
+    reviewsCount: "556",
     title: "Prayers for Mothers: Powerful Prayer Points and Scripture Declarations for Mothers Seeking Strength, Wisdom, and God's Grace",
     category: "Mothers & Family",
     amazonUrl: "https://a.co/d/0feD0DQE",
@@ -184,6 +204,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 21,
+    reviewsCount: "781",
     title: "Prayers for Men: Strength and Guidance: Powerful Prayer Points and Scripture Declarations for Men Seeking Strength, Courage, and Divine Direction",
     category: "Men",
     amazonUrl: "https://a.co/d/0hIgza58",
@@ -193,6 +214,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 22,
+    reviewsCount: "801",
     title: "Prayers for Breakthrough and Deliverance: Powerful Prayer Points and Scripture Declarations for Breakthrough, Deliverance, Freedom from Bondage, and Total...",
     category: "Breakthrough & Deliverance",
     amazonUrl: "https://a.co/d/01WEum8s",
@@ -202,6 +224,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 23,
+    reviewsCount: "689",
     title: "Prayers for Cancer Patients: Powerful Prayer Points and Scripture Declarations for Strength, Healing, and Hope on the Cancer Journey",
     category: "Healing & Health",
     amazonUrl: "https://a.co/d/0h2teeLn",
@@ -211,6 +234,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 24,
+    reviewsCount: "563",
     title: "Prayers for Wisdom and Guidance: Powerful Prayer Points and Scripture Declarations for Divine Direction, Godly Decision-Making, and Clear Guidance",
     category: "Wisdom & Guidance",
     amazonUrl: "https://a.co/d/0fr9ZYT3",
@@ -220,6 +244,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 25,
+    reviewsCount: "550",
     title: "Prayers for Children and Family: Powerful Prayer Points and Scripture Declarations for the Protection, Wisdom, and Blessing of Your Children and Home",
     category: "Children & Family",
     amazonUrl: "https://a.co/d/0a90y9j1",
@@ -229,6 +254,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 26,
+    reviewsCount: "611",
     title: "Prayers for Nurses: Powerful Prayer Points and Scripture Declarations for Strength, Wisdom, Compassion, and God's Rest in the Calling of Nursing",
     category: "Nurses & Caregivers",
     amazonUrl: "https://a.co/d/02PZdoup",
@@ -238,6 +264,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 27,
+    reviewsCount: "597",
     title: "Prayers for Grief and Loss: Powerful Prayer Points and Scripture Declarations for Comfort, Healing, and Strength in Seasons of Sorrow",
     category: "Grief & Loss",
     amazonUrl: "https://a.co/d/0gzv6bEQ",
@@ -247,6 +274,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 28,
+    reviewsCount: "940",
     title: "Prayers for Peace and Anxiety Relief: Calming Bible Verses and Prayer Points for Women to Overcome Worry, Find Rest, and Trust God",
     category: "Peace & Anxiety",
     amazonUrl: "https://a.co/d/0hxs2oXa",
@@ -256,6 +284,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 29,
+    reviewsCount: "523",
     title: "Prayers for Teachers: Powerful Prayer Points and Scripture Declarations for Strength, Wisdom, Patience, and God's Rest in the Calling of Teaching",
     category: "Teachers & Caregivers",
     amazonUrl: "https://a.co/d/0ipUqv9k",
@@ -265,6 +294,7 @@ export const PRAYER_BOOKS: PrayerBook[] = [
   },
   {
     id: 30,
+    reviewsCount: "672",
     title: "Prayers for Protection and Safety: Powerful Prayer Points and Scripture Declarations for Divine Protection over You, Your Family, and Your Home",
     category: "Protection & Safety",
     amazonUrl: "https://a.co/d/069FAPHK",
