@@ -62,4 +62,4 @@ vercel --prod
 - **Backend API**: Serverless Node.js functions located in `/api/`:
   - `POST /api/generate-prayer` -> Auto-rollup prayer generation engine (Groq -> Gemini -> Pastoral Fallback)
   - `GET /api/health` -> Health check endpoint
-- **Routing**: `vercel.json` routes `/api/*` to the serverless functions and redirects all other client routes to `index.html` for client-side routing.
+- **Routing**: Vercel serves `/api/*` from the serverless functions and rewrites non-API SPA routes to `index.html`. The local Express server is only for local development and is not used by the Vercel build.
