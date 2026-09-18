@@ -15,10 +15,10 @@ export type Page =
 export interface PrayerBook {
   id: number;
   title: string;
-  author: string;
+  author?: string;
   category: string;
-  rating: number;
-  reviewsCount: string;
+  rating?: number;
+  reviewsCount?: string;
   amazonUrl: string;
   imageUrl: string;
   coverGradient: string;
