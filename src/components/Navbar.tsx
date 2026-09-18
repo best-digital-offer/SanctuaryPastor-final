@@ -45,7 +45,6 @@ export const Navbar: React.FC<NavbarProps> = ({
       },
     },
     { label: 'Prayer Topics', page: 'prayer-topics' },
-    { label: 'Books on Amazon', page: 'prayer-books' },
     { label: 'Pricing', page: 'pricing' },
     { label: 'Scripture', page: 'scripture' },
     { label: 'Journal', page: 'journal' },
