@@ -324,7 +324,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Best Prayer Books On Amazon
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-                Deepen your spiritual intimacy with Christ. Browse our top 30 recommended prayer guides and devotionals available directly on Amazon.
+                Explore Christian prayer books and devotionals from the Prayerful Pages collection, with direct Amazon links.
               </p>
             </div>
 
@@ -349,47 +349,26 @@ export const HomeView: React.FC<HomeViewProps> = ({
               >
                 <div>
                   {/* Book Card Cover Graphic */}
-                  <div
-                    className={`w-full aspect-[3/4] rounded-xl overflow-hidden bg-gradient-to-br ${book.coverGradient} p-4 flex flex-col justify-between mb-3.5 shadow-md relative border border-white/10`}
-                  >
-                    <div className="flex items-center justify-between relative z-10">
-                      <ChristianCross className="w-4 h-4 text-amber-300" />
-                      <span className="text-[9px] font-bold uppercase tracking-wider text-amber-300 bg-black/40 px-2 py-0.5 rounded">
-                        {book.badge || 'Amazon Pick'}
-                      </span>
-                    </div>
-
-                    <div className="space-y-1 my-auto relative z-10">
-                      <p className="font-serif-sacred font-bold text-sm text-white leading-snug line-clamp-2">
-                        {book.title}
-                      </p>
-                      <p className="text-[11px] text-amber-100 font-medium">
-                        {book.author}
-                      </p>
-                    </div>
-
-                    <div className="flex items-center justify-between text-[10px] text-white/80 border-t border-white/10 pt-1.5 relative z-10">
-                      <span className="truncate">{book.category}</span>
-                      <span className="font-bold text-amber-300">{book.price}</span>
+                  <div className="w-full aspect-[3/4] rounded-xl overflow-hidden bg-slate-900 mb-3.5 shadow-md relative border border-white/10">
+                    <img
+                      src={book.imageUrl}
+                      alt={book.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-x-2 bottom-2 px-2 py-1 rounded-md bg-black/60 backdrop-blur-sm text-[9px] font-bold uppercase tracking-wider text-amber-300">
+                      Prayerful Pages
                     </div>
                   </div>
+
 
                   {/* Title & Author */}
                   <h3 className="font-semibold text-sm text-white line-clamp-2 leading-snug group-hover:text-amber-300 transition-colors">
                     {book.title}
                   </h3>
-                  <p className="text-xs text-slate-400 mt-0.5">By {book.author}</p>
+                  {book.author && <p className="text-xs text-slate-400 mt-0.5">By {book.author}</p>}
 
                   {/* Rating */}
-                  <div className="flex items-center gap-1.5 mt-2">
-                    <div className="flex text-amber-400">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 fill-current text-amber-400" />
-                      ))}
-                    </div>
-                    <span className="text-xs font-bold text-white">{book.rating}</span>
-                    <span className="text-[10px] text-slate-400">({book.reviewsCount})</span>
-                  </div>
+
                 </div>
 
                 {/* View on Amazon Button */}
