@@ -65,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header className="sticky top-0 z-40 bg-[#080E1E]/95 backdrop-blur-md border-b border-[#1A2645]/80 transition-all duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[88px] py-3 flex items-center justify-between">
         {/* Brand */}
         <button
           id="nav-logo-btn"
@@ -80,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="font-brand text-lg tracking-wider font-bold text-white group-hover:text-amber-300 transition-colors">
+              <span className="font-brand text-[17px] sm:text-lg tracking-wide font-bold text-white group-hover:text-amber-300 transition-colors whitespace-nowrap">
                 Sanctuary Pastor
               </span>
             </div>
