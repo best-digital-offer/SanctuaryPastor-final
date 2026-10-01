@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://best-digital-offer.github.io/SanctuaryPastor-final/sitemap.xml
+Sitemap: https://www.sanctuarypastor.com/sitemap.xml
