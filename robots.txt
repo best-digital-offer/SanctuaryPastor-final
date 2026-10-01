@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.sanctuarypastor.com/sitemap.xml
+Sitemap: https://sanctuarypastor.com/sitemap.xml
