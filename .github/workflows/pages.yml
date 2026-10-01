@@ -22,11 +22,13 @@ jobs:
       - name: Prepare static site
         run: |
           rm -rf _site
-          mkdir -p _site/images
+          mkdir -p _site/images/books
           cp index.html _site/index.html
           cp robots.txt _site/robots.txt
-          cp -r public/images _site/images/books
+          cp public/images/books/*.jpg _site/images/books/
           touch _site/.nojekyll
+          test -f _site/images/books/1.jpg
+          test -f _site/images/books/35.jpg
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
