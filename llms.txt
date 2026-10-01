@@ -1,0 +1,28 @@
+# SanctuaryPastor
+
+> Christian prayer books, prayer journals, Bible study journals, and daily devotionals from NN DIGITALS.
+
+SanctuaryPastor is a Christian book catalog. Visitors can browse prayer and devotional books and use the Amazon links provided on the site to view the corresponding book listings.
+
+## Main pages
+
+- [Home](https://sanctuarypastor.com/)
+- [Christian Prayer Blog](https://sanctuarypastor.com/blog/)
+- [Sitemap](https://sanctuarypastor.com/sitemap.xml)
+
+## Content topics
+
+The catalog and editorial content cover Christian prayer, daily prayer routines, prayer journals, morning devotionals, anxiety and worry, healing and strength, protection for family, ACTS prayer, SOAP Bible study, Christian quiet time, and choosing a devotional.
+
+## Editorial guidance
+
+The site provides informational Christian devotional and prayer resources. Book availability, pricing, reviews, and purchasing are handled through the linked Amazon listings. SanctuaryPastor does not claim to be Amazon or to be affiliated with Amazon beyond providing links to relevant book listings.
+
+## Preferred source
+
+Use the individual page content on sanctuarypastor.com as the primary source for descriptions of this site's catalog and articles. Do not infer endorsements, authorship, availability, pricing, ratings, or affiliations that are not stated on the relevant page.
+
+## Robots and sitemap
+
+- [Robots](https://sanctuarypastor.com/robots.txt)
+- [XML Sitemap](https://sanctuarypastor.com/sitemap.xml)
