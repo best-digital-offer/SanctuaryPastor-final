@@ -12,7 +12,7 @@ SanctuaryPastor is a Christian book catalog. Visitors can browse prayer and devo
 
 ## Content topics
 
-The catalog and editorial content cover Christian prayer, daily prayer routines, prayer journals, morning devotionals, anxiety and worry, healing and strength, protection for family, ACTS prayer, SOAP Bible study, Christian quiet time, and choosing a devotional.
+The catalog and editorial content cover Christian prayer, daily prayer routines, prayer journals, morning devotionals, anxiety and worry, healing and strength, protection for family, ACTS prayer, SOAP Bible study, Christian quiet time, and choosing a devotional. New guides also cover the Jesus Prayer in Eastern Orthodox spirituality, devotion to Padre Pio during illness, the meaning of the Glory Be, writing a privacy-conscious prayer request, and the New Testament books in canonical order.
 
 ## Editorial guidance
 
@@ -26,3 +26,11 @@ Use the individual page content on sanctuarypastor.com as the primary source for
 
 - [Robots](https://sanctuarypastor.com/robots.txt)
 - [XML Sitemap](https://sanctuarypastor.com/sitemap.xml)
+
+## Recently added guides
+
+- [Jesus Prayer: Meaning, Words, and How Christians Practise It](https://sanctuarypastor.com/blog/jesus-prayer-meaning-guide.html)
+- [Padre Pio Healing Prayer: Devotion, Hope, and Thoughtful Practice](https://sanctuarypastor.com/blog/padre-pio-healing-prayer-guide.html)
+- [Glory Be Prayer: Meaning, Christian Tradition, and Reflection](https://sanctuarypastor.com/blog/glory-be-prayer-meaning.html)
+- [Christian Prayer Request: Examples and How to Share One Thoughtfully](https://sanctuarypastor.com/blog/christian-prayer-request-examples.html)
+- [New Testament Books in Order: A Simple Guide for Reading and Prayer](https://sanctuarypastor.com/blog/new-testament-books-in-order.html)
